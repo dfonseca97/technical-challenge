@@ -1,0 +1,27 @@
+{
+  "name": "micro-service-2",
+  "version": "1.0.0",
+  "description": "client facing service",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfonseca97/technical-challenge.git"
+  },
+  "keywords": [
+    "challenge",
+    "devops",
+    "minikube"
+  ],
+  "author": "Diego Fonseca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfonseca97/technical-challenge/issues"
+  },
+  "homepage": "https://github.com/dfonseca97/technical-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
