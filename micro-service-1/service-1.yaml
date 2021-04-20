@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: service-1
+spec:
+  type: NodePort
+  selector:
+    app: micro-service-1
+  ports:
+  - name: service-1
+    protocol: TCP
+    port: 80
+    targetPort: 3000

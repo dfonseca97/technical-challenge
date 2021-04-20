@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: micro-service-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: micro-service-1
+  template:
+    metadata:
+      labels:
+        app: micro-service-1
+    spec:
+      containers:
+      - name: service-1-container
+        image: micro1:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3000
