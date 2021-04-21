@@ -54,10 +54,10 @@ The final step is creating the tunnel to expose the micro service 1:
 minikube service service-1 --url
 ```
 
-The deployment script also includes this line. It will output the URL to access the service. The service can be tested using a tool like Postman or just by sending a request with curl only replacing the service ip in the following command:
+The deployment script also includes this line. It will output the URL to access the service. The service can be tested using a tool like Postman or just by sending a request with curl only replacing the service URL in the following command:
 
 ```bash
-curl -i -X POST -H 'Content-Type: application/json' -d '{"message":"abcde"}' <service ip>/api
+curl -i -X POST -H 'Content-Type: application/json' -d '{"message":"abcde"}' <service URL>/api
 ```
 
 The response body should be:
